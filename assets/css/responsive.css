@@ -1,0 +1,155 @@
+/* =======================
+   RESPONSIVE.CSS
+   Estilos para dispositivos móveis
+======================= */
+
+/* Dispositivos até 1200px */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Dispositivos até 992px (Tablets em paisagem) */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .valores-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .valor {
+    flex: 1 1 40%;
+    min-width: 200px;
+  }
+}
+
+/* Dispositivos até 768px (Tablets em retrato) */
+@media (max-width: 768px) {
+  /* Menu Hamburguer */
+  .menu-icon {
+    display: flex;
+    order: 1;
+  }
+  
+  .menu {
+    display: none;
+    width: 100%;
+    order: 2;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+  
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  /* Sobre Section */
+  .sobre-container {
+    padding: 0 15px;
+  }
+  
+  /* Modalidades */
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  /* Contato */
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contato-info {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+/* Dispositivos até 576px (Celulares) */
+@media (max-width: 576px) {
+  header {
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .btn-matricula {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .sobre h2, .valores h2, 
+  .modalidades h2, .planos h2,
+  .contato h2 {
+    font-size: 1.5rem;
+  }
+  
+  .valor {
+    flex: 1 1 100%;
+  }
+  
+  .planos-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .plano.destaque {
+    transform: scale(1);
+  }
+  
+  .footer img {
+    width: 100px;
+  }
+}
+
+/* Dispositivos muito pequenos (até 400px) */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+  
+  .btn-matricula {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
